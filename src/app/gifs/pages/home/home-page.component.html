@@ -1,0 +1,19 @@
+<div class="row p-3">
+<div class="col-12">
+ <gifs-search-box></gifs-search-box>
+</div>
+
+ <div class="col-12 p-2">
+
+
+  <!--card-list-->
+
+   <!-- hay poner aqui los gifs de la busquedad para eso hay que inyectarlo
+     en home-page.component.ts
+    y ponemos [???]="gifs" va a recibir informacion del padre
+  no vamos a CardListComponent.ts y ponemos un Input -->
+  <gifs-card-list [gifs]="gifs"></gifs-card-list>
+
+</div>
+
+</div>

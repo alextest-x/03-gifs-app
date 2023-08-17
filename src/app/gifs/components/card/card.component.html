@@ -1,0 +1,29 @@
+<div class="card mb-2 text-center bg-dark">
+
+
+  <!-- recibiendo el url shared-lazy-Image -->
+ <shared-lazy-Image
+ [url]="gif.images.downsized_medium.url"
+ [alt]="gif.title || 'No name'"
+ class="card-img-top"
+ ></shared-lazy-Image>
+
+
+   <!--TODO mostrar la imagen -->
+
+  <!--haciendo un binding
+ <img alt=""
+ [src] = "gif.images.downsized_medium.url"
+ [alt]="gif.title"
+ class="card-img-top"
+ >
+-->
+
+
+  <div class="card-body text-white">
+   <p class="card-text">
+     {{ gif.title || 'No title'}}
+
+   </p>
+  </div>
+</div>
